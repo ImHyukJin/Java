@@ -1,0 +1,13 @@
+package quiz19;
+
+public class ArrayQuiz01 {
+
+	public static void main(String[] args) {
+		
+		//프로그래머스 문제 
+		
+		String[] participant = {"홍길동", "홍길자", "이순신", "신사임당"};
+		String[] completion = {"홍길동", "신사임당", "이순신"};
+		
+	}
+}

@@ -1,0 +1,14 @@
+package api.lang.object;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		Person p = new Person("홍길동");
+	
+		String str = p.toString();
+		System.out.println(str);
+		
+		
+	}
+}

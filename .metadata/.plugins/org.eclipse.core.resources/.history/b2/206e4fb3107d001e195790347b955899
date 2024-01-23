@@ -1,0 +1,52 @@
+package day04;
+
+import java.util.Arrays;
+
+public class MethodEx04 {
+
+	public static void main(String[] args) {
+		
+		//배열을 매개변수로 전달?
+		String[] arr = {"월", "화", "수"};
+		
+		String result = func01(arr);
+		System.out.println(result);
+		
+		//배열을 반환?
+		int[] result2 = func02();
+		System.out.println( Arrays.toString(result2) );
+		
+		
+		//데이터타입
+	}
+	//배열을 매개변수로 받는다.
+	static String func01(String[] arr) {
+		
+		String str = "";
+		for(int i = 0; i < arr.length; i++) {
+			str += arr[i];
+		}
+		return str;
+	}
+	
+	//배열을 반환하는 메서드
+	static int[] func02() {
+		
+		int[] arr = {1,2,3};
+		//내용...생략....
+		
+		return arr;
+	}
+	
+	//6
+	
+	//7
+	
+	//8
+	
+	
+	
+	
+	
+	
+}

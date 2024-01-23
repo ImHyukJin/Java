@@ -1,0 +1,64 @@
+package api.lang.string;
+
+import java.util.Arrays;
+
+public class StringEx {
+
+	public static void main(String[] args) {
+		
+		//문자열 다루기 메서드
+		
+		String str = "hello world";
+
+		char[] arr = {'h', 'e','l', 'l', 'o'};
+		String str2 = new String( arr );
+		
+		System.out.println(str2);
+		
+		System.out.println("------------------------------------------");
+		
+		//1. 문자열의 인덱스 위치를 잘라서 char형 반환
+		//char r = str.charAt(0);
+		//System.out.println(r);
+		System.out.println( str.charAt(0) );
+		
+		//2. 문자열길이
+		System.out.println("문자열길이:" + str.length() );
+		
+		//3. 문자열 자르기
+		System.out.println( str.substring(2)   ); //2인덱스 미만 절삭
+		System.out.println( str.substring(2, str.length() ) ); //2이상~11미만 추출
+		
+		System.out.println("원본문자열:" + str);
+		
+		//4. 문자열 자르기 split()
+		String[] r1 = str.split("");
+		System.out.println( Arrays.toString(r1)  );
+		
+		String[] r2 = str.split("", 5); //최대 길이 5
+		System.out.println( Arrays.toString(r2)  );
+		
+		//5. 문자열 자르기 toCharArray()
+		char[] r3 = str.toCharArray();
+		System.out.println( Arrays.toString(r3)  );
+		
+		
+		//6. 문자열 치환 replace()
+		str = "커피중에 가장 맛있는 커피는 아이스 아메리카노 커피입니다";
+		System.out.println(str);
+		
+		System.out.println( str.replace("커피", "coffee") ); //찾을문자, 바꿀문자
+		System.out.println( str);
+		System.out.println( str.replaceFirst("커피", "coffee"));
+		
+		//7. 앞뒤 공백 치환하기 trim()
+		str = " 안녕 하세요?    ";
+		System.out.println( str  );
+		System.out.println( str.trim() );
+		
+		
+		
+		
+		
+	}
+}

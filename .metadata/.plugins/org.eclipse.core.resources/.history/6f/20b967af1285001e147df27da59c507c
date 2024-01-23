@@ -1,0 +1,15 @@
+package day10.exception.throw_;
+
+public class ThrowEx01 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * throw
+		 * 예외 강제로 발생시키기
+		 * 
+		 */
+		
+		
+	}
+}

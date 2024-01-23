@@ -1,0 +1,20 @@
+package day10.exception.throws_;
+
+public class ThrowsEx02 {
+
+	public ThrowsEx02() {
+		
+		System.out.println("생성자 호출");
+		
+		System.out.println("생성자 종료");
+	}
+	
+	public void aaa() {
+		
+	}
+	
+	public void bbb() {
+		
+	}
+	
+}

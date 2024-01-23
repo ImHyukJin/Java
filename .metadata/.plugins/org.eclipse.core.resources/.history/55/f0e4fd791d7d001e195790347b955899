@@ -1,0 +1,16 @@
+package day04;
+
+public class MethodEx07 {
+
+	public static void main(String[] args) {
+		
+		//배열의 한계점 -> 크기가 고정
+		//Stack - LIFO(Last In First Out) 
+		
+		
+		
+		
+		
+		
+	}
+}

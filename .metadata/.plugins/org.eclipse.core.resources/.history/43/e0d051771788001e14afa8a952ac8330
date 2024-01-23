@@ -1,0 +1,12 @@
+package quiz19;
+
+public class ArrayQuiz02 {
+
+	public static void main(String[] args) {
+		
+		
+		//실제 회사코테 문제(난이도)
+		
+		
+	}
+}

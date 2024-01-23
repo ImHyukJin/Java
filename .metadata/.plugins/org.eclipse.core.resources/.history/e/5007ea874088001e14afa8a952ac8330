@@ -1,0 +1,14 @@
+package quiz19;
+
+public class TokenQuiz01 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 1. 스캐너 nextLine() 이용을해서 공백을 포함한 문장을 입력을 받습니다.
+		 * 2. ,와 공백기준으로 문장을 분리합니다. 
+		 * 
+		 */
+		
+	}
+}

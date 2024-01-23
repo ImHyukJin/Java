@@ -1,0 +1,11 @@
+package day10.exception.throws_;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		ThrowsEx02 ex = new ThrowsEx02();
+		
+		
+	}
+}

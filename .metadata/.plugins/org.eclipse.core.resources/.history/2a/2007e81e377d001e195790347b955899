@@ -1,0 +1,21 @@
+package day04;
+
+public class StringMethod {
+
+	public static void main(String[] args) {
+		
+		//문자열 다루기 메서드
+		
+		//문자열 "ABC";
+		String str = "ABC";
+		char[] arr = {'A', 'B', 'C'};
+		
+		String str2 = new String(arr);
+		
+		
+		
+		
+		
+		
+	}
+}

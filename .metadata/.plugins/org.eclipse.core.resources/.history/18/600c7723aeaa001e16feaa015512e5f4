@@ -1,0 +1,55 @@
+package Baekjoon;
+
+import java.util.*;
+class Main {
+	public static void main(String[] args) {
+		int n = 6;
+		int[][] edge = {{3, 6}, {4, 3}, {3, 2}, {1, 3}, {1, 2}, {2, 4}, {5, 2}};
+
+		//최단경로니까 bfs
+		//거리를 재야하니 각 거리에서 +1
+
+		//n은 정점의 갯수 edge.length 간선의 갯수
+
+		ArrayList<ArrayList> list = new ArrayList<>();
+		boolean[] visited = new boolean[n+1];
+		int[] distance = new int[n+1];
+		//초기화
+		for(int i = 0 ; i<=n ;i++) {
+			list.add(new ArrayList<>());
+		}
+		//간선 넣기
+		for(int i = 0 ; i< edge.length ; i++) {
+			list.get(edge[i][0]).add(edge[i][1]);
+			list.get(edge[i][1]).add(edge[i][0]);
+		}
+
+		System.out.println(11);
+		//bfs
+
+		Queue <Integer> que = new LinkedList<>();
+
+		que.add(1);
+		visited[1] = true;
+		distance[1] = 0;
+		while(!que.isEmpty()) {
+			int v = que.poll();
+			ArrayList<Integer> node = list.get(v);
+
+			for(int i = 0 ; i<node.size() ; i++) {
+				if(!visited[node.get(i)]) {
+					que.add(node.get(i));
+					distance[node.get(i)] = distance[v]+1;
+				}
+			}
+		}
+		//가장 큰 갯수를 구해야하니 정렬해서 뒷순서대로
+		int answer = 0;
+		Arrays.sort(distance);
+		int max = distance[distance.length-1];
+//		for(int i = distance.length-1 ; distance[i]==max ; i--) {
+//			answer++;
+//		}
+		System.out.println(answer);
+	}
+}

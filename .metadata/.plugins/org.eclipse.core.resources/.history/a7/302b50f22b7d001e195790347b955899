@@ -1,0 +1,25 @@
+package day04;
+
+public class MethodEx08 {
+
+	public static void main(String[] args) {
+		
+		//Queue - FIFO (First In First Out)
+		
+	}
+	
+	static int[] arr = {};
+	
+	//추가
+	static void push(int data) {
+		
+	}
+	//삭제
+	static int pop() {
+		return 0;
+	}
+	
+	
+	
+	
+}

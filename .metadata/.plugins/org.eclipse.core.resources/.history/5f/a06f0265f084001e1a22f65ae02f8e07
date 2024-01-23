@@ -1,0 +1,14 @@
+package quiz18;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 1. 스캐너를 통해서 정수 2개를 입력받습니다.
+		 * 
+		 */
+		
+		
+	}
+}

@@ -1,0 +1,16 @@
+package quiz18;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 1. 스캐너를 통해서 정수 2개를 입력받습니다.
+		 * 2. 입력받은 값이 정수라면, 두 정수의 합을 출력하고 반복문을 종료
+		 * 3. 입력받은 값이 에러를 발생시키면, "정수로만 입력하세요" 를 출력하고 다시 입력받습니다.
+		 * 
+		 */
+		
+		
+	}
+}

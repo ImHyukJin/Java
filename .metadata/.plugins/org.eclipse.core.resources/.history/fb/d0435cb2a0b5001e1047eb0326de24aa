@@ -1,0 +1,20 @@
+package Programers;
+
+import java.util.*;
+class Solution {
+    public int[] solution(int[] numbers) {
+        int[] answer = {};
+        
+        Deque<Integer> que = new ArrayDeque<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0 ; i< numbers.length ;i++) {
+        	que.add(numbers[i]);
+        	
+        }
+        while(!que.isEmpty()) {
+        	int a = que.poll();
+        	if(que.peek())
+        }
+        return answer;
+    }
+}

@@ -1,0 +1,37 @@
+package day10.exception.throws_;
+
+public class ThrowsEx01 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 메서드 or 생성자에 발생되는 예외를 떠넘기는 키워드가 throws 입니다
+		 * 
+		 * throws가 붙은 메서드, 생성자를 호출할 때는 예외처리를 대신 진행해야 합니다.
+		 */
+		
+		try {
+			greeting(3);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
+	
+	
+	public static String[] arr = {"안녕하세요", "hello", "고니찌와"};
+	public static void greeting(int index) throws Exception {
+		
+		System.out.println(index + "번째 인사법입니다");
+		System.out.println(arr[index] );
+		
+		
+		
+	}
+	
+	
+	
+	
+}

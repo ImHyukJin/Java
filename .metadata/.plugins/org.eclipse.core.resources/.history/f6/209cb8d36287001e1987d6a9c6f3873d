@@ -1,0 +1,8 @@
+package quiz19;
+
+public class StringQuiz02 {
+
+	public static void main(String[] args) {
+		
+	}
+}

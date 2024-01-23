@@ -1,0 +1,77 @@
+package Programers;
+import java.io.*;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class Solution2 {
+
+    static int[] a = new int[500000];
+    static boolean isOk = true;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int N = Integer.parseInt(br.readLine());
+        int input;
+        int result;
+        int aCount = 0; // a 배열에 원소 개수를 카운트
+        int[] count = new int[20000001]; // 배열에 존재하는 원소의 개수를 카운트하기 위한 배열 - 도 포함되므로 2배로 설정해서 10000000 을 더해서 계산하기
+        int[] dp = new int[20000001];   // 중복계산을 막기위해 dp 사용
+
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        for(int i = 0; i < N; i++) {
+            input = Integer.parseInt(st.nextToken());
+            if(count[input+10000000] == 0)   // 해당 값이 처음들어올때만 a 배열에 입력
+                a[aCount++] = input;
+
+            count[input+10000000]++;  // 변수가 1개씩 들어올때마다 해당 배열 +1
+        }
+        Arrays.sort(a, 0, aCount);
+
+        int M = Integer.parseInt(br.readLine());
+        st = new StringTokenizer(br.readLine());
+        for(int i = 0; i < M; i++) {
+            input = Integer.parseInt(st.nextToken());
+            isOk = true;
+            if(dp[input+10000000] != 0) {
+                if(dp[input+10000000] != -1) {
+                    bw.write(String.valueOf(dp[input+10000000]));
+                }
+                else
+                    bw.write("0");
+                bw.write(" ");
+                bw.flush();
+            }
+            else {
+                result = binarySearch(0, aCount, input);
+                if(isOk) {
+                    dp[result+10000000] = count[result+10000000];
+                    bw.write(String.valueOf(dp[result+10000000]));
+                }
+                else {
+                    dp[result+10000000] = -1;
+                    bw.write("0");
+                }
+                bw.write(" ");
+                bw.flush();
+            }
+        }
+    }
+
+    static int binarySearch(int start, int end, int key) {
+        int mid;
+        while(start < end) {
+            mid = (start + end) / 2;
+
+            if(a[mid] > key)
+                end = mid;
+            else if(a[mid] < key)
+                start = mid+1;
+            if(a[mid] == key)
+                return key;
+        }
+        isOk = false;
+        return key;
+    }
+}

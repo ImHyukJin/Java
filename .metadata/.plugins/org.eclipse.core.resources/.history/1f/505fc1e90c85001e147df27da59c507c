@@ -1,0 +1,17 @@
+package day10.exception.throws_;
+
+public class ThrowsEx02 {
+
+	public ThrowsEx02() {
+		
+	}
+	
+	public void aaa() {
+		
+	}
+	
+	public void bbb() {
+		
+	}
+	
+}

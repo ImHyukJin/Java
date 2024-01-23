@@ -1,0 +1,39 @@
+package Programers;
+
+
+import java.util.*;
+
+class Solution {
+	static int answer;
+	static int target;
+	static int[] numbers;
+	public static void dfs(int index , int sum){
+		//중지 조건
+		if(index== numbers.length){
+			if(sum == target){
+				answer++;
+				return ;
+			}
+		}
+		//구현 동작
+		dfs(index+1,sum+numbers[index]);
+		dfs(index+1,sum-numbers[index]);
+	}
+
+	public int solution(int[] numbers, int target) {
+		//dfs - , + 사용 , 인덱스와 더한 값을 지정
+		this.target = target;
+
+
+		this.numbers = numbers;
+		
+		System.out.println(Arrays.toString(numbers));
+		dfs(0,0);
+
+
+		
+
+		return answer;
+
+	}
+}

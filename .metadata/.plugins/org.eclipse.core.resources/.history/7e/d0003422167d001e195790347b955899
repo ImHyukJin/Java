@@ -1,0 +1,12 @@
+package day04;
+
+public class MethodEx06 {
+
+	public static void main(String[] args) {
+		
+		//메서드의 연쇄 호출
+	}
+	
+	
+	
+}

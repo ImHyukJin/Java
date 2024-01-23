@@ -1,0 +1,8 @@
+package api.lang.system;
+
+public class SystemEx {
+
+	public static void main(String[] args) {
+		
+	}
+}

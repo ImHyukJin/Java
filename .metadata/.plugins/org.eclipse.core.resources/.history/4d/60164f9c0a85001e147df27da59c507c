@@ -1,0 +1,23 @@
+package day10.exception.throws_;
+
+public class ThrowsEx01 {
+
+	public static void main(String[] args) {
+		
+		
+		greeting(0);
+		
+	}
+	
+	
+	public static String[] arr = {"안녕하세요", "hello", "고니찌와"};
+	public static void greeting(int index) {
+		
+		System.out.println(index + "번째 인사법입니다");
+		System.out.println(arr[index] );
+	}
+	
+	
+	
+	
+}

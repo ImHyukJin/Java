@@ -1,0 +1,43 @@
+package api.lang.object;
+
+public class Person /*extends Object*/ {
+
+	private String name;
+	
+	public Person(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	//오버라이딩 - 객체안에 변수를 빠르게 확인하기 위해서 오버라이딩해서 많이 사용함
+	@Override
+	public String toString() {
+		return "Person [name=" + name + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		return super.equals(obj);
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

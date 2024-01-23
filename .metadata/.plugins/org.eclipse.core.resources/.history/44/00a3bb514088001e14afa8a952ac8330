@@ -1,0 +1,8 @@
+package quiz19;
+
+public class TokenQuiz01 {
+
+	public static void main(String[] args) {
+		
+	}
+}

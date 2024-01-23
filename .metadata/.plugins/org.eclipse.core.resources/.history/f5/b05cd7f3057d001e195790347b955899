@@ -1,0 +1,26 @@
+package day04;
+
+public class MethodEx04 {
+
+	public static void main(String[] args) {
+		
+		//배열을 매개변수로 전달?
+		String[] arr = {"월", "화", "수"};
+		
+	}
+	
+	//배열을 매개변수로 받는다.
+	static String func01(String[] arr) {
+		
+		
+		
+		return null;
+	}
+	
+	
+	
+	
+	
+	
+	
+}

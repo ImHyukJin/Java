@@ -1,0 +1,19 @@
+package quiz21;
+
+public class FileQuiz03 {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 연화가 입사한 회사에서는 매일 오전 7시에 연계사에서 
+		 * 날짜유형의 csv파일을 전송을 해줍니다.
+		 * 
+		 * ex) 2023_11_24_data.csv 유형의 파일입니다
+		 * 
+		 * 
+		 * 
+		 * 
+		 */
+		
+	}
+}

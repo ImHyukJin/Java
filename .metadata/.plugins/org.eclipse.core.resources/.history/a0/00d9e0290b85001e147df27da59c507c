@@ -1,0 +1,31 @@
+package day10.exception.throws_;
+
+public class ThrowsEx01 {
+
+	public static void main(String[] args) {
+		
+		try {
+			greeting(3);
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		
+	}
+	
+	
+	public static String[] arr = {"안녕하세요", "hello", "고니찌와"};
+	public static void greeting(int index) throws Exception {
+		
+		System.out.println(index + "번째 인사법입니다");
+		System.out.println(arr[index] );
+		
+		
+		
+	}
+	
+	
+	
+	
+}

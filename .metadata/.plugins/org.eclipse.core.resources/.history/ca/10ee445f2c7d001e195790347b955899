@@ -1,0 +1,33 @@
+package day04;
+
+public class MethodEx08 {
+
+	public static void main(String[] args) {
+		
+		//Queue - FIFO (First In First Out)
+		
+	}
+	
+	static int[] arr = {};
+	
+	//추가
+	static void push(int data) {
+		
+		//1. 배열 크기 +1 새로운 배열 생성
+		
+		//2. 배열 요소 복사
+		
+		//3. 마지막 추가
+		
+		//4. 원본 배열을 temp로 변경
+		
+	}
+	//삭제
+	static int pop() {
+		return 0;
+	}
+	
+	
+	
+	
+}
