@@ -36,7 +36,7 @@ class Solution {
     }
     
     public int solution(String begin, String target, String[] words) {
-        this.words = words;
+        Solution.words = words;
         boolean val = false;
         for(String a : words){
             if(a.equals(target)){
