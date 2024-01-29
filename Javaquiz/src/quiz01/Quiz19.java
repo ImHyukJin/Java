@@ -32,6 +32,7 @@ public class Quiz19 {
 			}
 			
 		}
+		scan.close();
 		
 		
 		System.out.println("정답횟수:" + count);
