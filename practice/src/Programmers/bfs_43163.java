@@ -35,9 +35,6 @@ class Solution {
             if(words[val].equals(target)){
                 return visited[val];
             }
-
-            visited[val]++;
-
             for(int i = 0 ; i < words.length ; i++){
                 if(visited[i]==0 && canchange(words[val],words[i])){
                     que.add(i);
